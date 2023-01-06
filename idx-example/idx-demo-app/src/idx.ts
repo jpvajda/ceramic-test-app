@@ -18,7 +18,7 @@ export type NoteItem = {
 export type NotesList = { notes: Array<NoteItem> }
 
 export type IDXInit = NotesList & {
-  ceramic: Ceramic
+  ceramic: CeramicClient
   idx: IDX
 }
 
@@ -31,10 +31,12 @@ export async function getIDX(seed: Uint8Array): Promise<IDXInit> {
   const provider = new Ed25519Provider(seed)
   const did = new DID({ provider, resolver })
   await ceramic.setDID(did)
-  await ceramic.did.authenticate()
+  await did.authenticate()
+   // Mount the DID object to your Ceramic object
+   ceramic.did = did
 
   // Create the IDX instance with the definitions aliases from the config
-  const idx = new IDX({ ceramic, aliases: definitions })
+  const idx = new IDX({ceramic, aliases: definitions })
 
   // Load the existing notes
   const notesList = await idx.get<{ notes: Array<NoteItem> }>('notes')
