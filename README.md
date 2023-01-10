@@ -8,3 +8,5 @@ A test app built with: React, IDX, Ceramic, and DIDs.
 - [Glaze example](https://developers.ceramic.network/tools/glaze/example/)
 - [Ceramic TypScript Implentation](https://developers.ceramic.network/reference/typescript/modules.html)
 - [Ceramic-http-client.ts source code](https://github.com/ceramicnetwork/js-ceramic/blob/cb06d641ff4795d2a8c9acd0f9f287d53c6ff6a7/packages/http-client/src/ceramic-http-client.ts)
+- [ComposeDB](https://composedb.js.org/docs/0.3.x/installation)
+

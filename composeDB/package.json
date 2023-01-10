@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@composedb/cli": "^0.3.1",
+    "@composedb/client": "^0.3.1"
+  },
+  "devDependencies": {
+    "@composedb/devtools": "^0.3.1",
+    "@composedb/devtools-node": "^0.3.1",
+    "@composedb/types": "^0.3.1"
+  }
+}
