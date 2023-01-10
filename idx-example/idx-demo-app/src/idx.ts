@@ -5,9 +5,8 @@ import { getResolver } from '@ceramicnetwork/3id-did-resolver';
 import KeyDidResolver from 'key-did-resolver';
 import { Resolver } from 'did-resolver';
 import { DID } from 'dids';
-
 import { definitions } from './config.json'
-
+import { CeramicApi } from '@ceramicnetwork/common'
 const CERAMIC_URL = 'http://localhost:7007'
 
 export type NoteItem = {
@@ -35,8 +34,8 @@ export async function getIDX(seed: Uint8Array): Promise<IDXInit> {
    // Mount the DID object to your Ceramic object
    ceramic.did = did
 
-  // Create the IDX instance with the definitions aliases from the config
-  const idx = new IDX({ceramic, aliases: definitions })
+   // Create the IDX instance with the definitions aliases from the config
+   const idx = new IDX({ceramic as CeramicApi, aliases: definitions })
 
   // Load the existing notes
   const notesList = await idx.get<{ notes: Array<NoteItem> }>('notes')

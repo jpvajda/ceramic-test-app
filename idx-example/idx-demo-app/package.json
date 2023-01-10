@@ -5,6 +5,7 @@
   "type": "module",
   "dependencies": {
     "@ceramicnetwork/cli": "^2.18.0",
+    "@ceramicnetwork/common": "^2.16.0",
     "@ceramicnetwork/http-client": "^2.13.0",
     "@ceramicstudio/idx": "^0.12.2",
     "@ceramicstudio/idx-tools": "^0.11.0",
