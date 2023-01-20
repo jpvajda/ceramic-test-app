@@ -11,3 +11,4 @@ A test app built with: React, IDX, Ceramic, and DIDs.
 - [ComposeDB](https://composedb.js.org/docs/0.3.x/installation)
 - [Simple Getting started app Repo + Guide](https://github.com/ceramicstudio/tutorial-getting-started-with-ceramic)
 - [Simple Getting started app YouTube walk thru](https://www.youtube.com/watch?v=rpyokDPnyUs&ab_channel=CeramicNetwork)
+- [Using Create Ceramic App](https://blog.ceramic.network/launching-create-ceramic-app/)
